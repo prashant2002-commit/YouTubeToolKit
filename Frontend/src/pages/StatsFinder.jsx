@@ -4,6 +4,7 @@ import Container from '../components/Container';
 import Header from '../components/Header';
 import SearchSection from '../components/SearchSection';
 import Loading from '../components/Loading';
+import Dashboard from '../components/Dashboard';
 
 
 function StatsFinder() {
@@ -24,6 +25,7 @@ function StatsFinder() {
           {error}
         </div>
       )}
+      <Dashboard/>
     </Container>
   </>
 }
