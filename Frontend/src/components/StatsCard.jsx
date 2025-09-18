@@ -1,11 +1,10 @@
 import React from "react";
 
-const StatsCard = ({value,label,icon}) => {
+const StatsCard = ({value,label,icon,borderColor}) => {
   return (
     <div
       className="bg-[rgba(45,55,72,0.5)] p-[25px] rounded-[15px] shadow-[0_5px_15px_rgba(0,0,0,0.1)] border-l-[4px] border border-[rgba(74,85,104,0.3)] transition-transform duration-300 
-        hover:-translate-y-[5px] hover:bg-[rgba(45,55,72,0.7)] ease-in-out"
-    >
+        hover:-translate-y-[5px] hover:bg-[rgba(45,55,72,0.7)] ease-in-out" style={{ borderLeftColor: borderColor}}>
       <div className="text-[2.2rem] font-bold text-[#e2e8f0] mb-[5px]">
         {value}
       </div>
