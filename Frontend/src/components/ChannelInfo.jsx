@@ -9,7 +9,7 @@ const ChannelInfo = ({avatar, name, description}) => {
         src={avatar || avatar_img}
         alt="Channel Avatar"
       />
-      <div class="channel-details">
+      <div className="channel-details">
         <h2 className="text-[1.8rem] text-[#e2e8f0] mb-[5px]">{name || 'Channel Name'}</h2>
         <p className="text-[#a0aec0] text-[14px]">
             {description || 'Channel description will appear here'}
