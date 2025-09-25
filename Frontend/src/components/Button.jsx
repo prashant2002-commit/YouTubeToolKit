@@ -1,16 +1,16 @@
 import React from 'react'
 
-const Button = (loading) => {
+const Button = ({loading}) => {
 
 
   return (
     <>
-        <button className="px-[30px] py-[15px] 
+        <button className="px-[20px] py-[10px] 
     bg-gradient-to-br from-[#667eea] to-[#764ba2]
     text-white 
     border-0 
-    rounded-[10px] 
-    text-[16px] 
+    rounded-[8px] 
+    text-[14px] 
     font-[600] 
     cursor-pointer 
     transition-all 
@@ -21,6 +21,7 @@ const Button = (loading) => {
     disabled:cursor-not-allowed 
     disabled:transform-none"
     disabled={loading}
+
     >
             Analyze Channel
         </button>

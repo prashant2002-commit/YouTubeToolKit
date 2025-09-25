@@ -1,29 +1,29 @@
-import React from "react";
-import Button from "./Button";
+import React from 'react'
+import Button from './Button'
 
-const Header = ({ channelInput, setChannelInput, loading }) => {
+const HeaderTwo = ({channelInput,setChannelInput,loading}) => {
   return (
-    <header className="w-full mx-0 bg-[linear-gradient(35deg,#2d3748_0%,#4a5568_100%)] text-white p-[10px] border-b border-[rgba(74,85,104,0.5)]">
-      <div className="flex items-center justify-between max-w-[1200px] mx-auto">
+    <header className="w-full mx-0 bg-[linear-gradient(35deg,#2d3748_0%,#4a5568_100%)] text-white p-[0px] border-b border-[rgba(74,85,104,0.5)] rounded-t-xl">
+      <div className="flex items-center  max-w-[2000px] mx-auto relative translate-x-4">
         {/* Logo + Title */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-1">
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="white"
-            viewBox="0 0 27 27"
-          >
-            <path d="M12 2v10h10c0-5.5-4.5-10-10-10zM2 12c0 5.5 4.5 10 10 10v-10H2zm12 0v10c5.5 0 10-4.5 10-10h-10z" />
-          </svg>
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                viewBox="0 0 27 27"
+              >
+                <path d="M11 21h-1l1-7H5l9-12h1l-1 7h6l-9 12z" />
+              </svg>
           <h1 className="text-xl  font-semibold text-white">
-            YT Channel <sup>Stats</sup>
+            Trending Vedios <span className='font-normal'><sup>IN</sup></span>
           </h1>
         </div>
 
         {/* Search Section */}
-        <div className="flex-1 max-w-[600px] mx-10">
-          <div className="flex gap-[10px]">
+        <div className="flex flex-1 justify-center m-[10px] relative -translate-x-22">
+            <div className="flex gap-[10px] w-full max-w-[600px]">
             <input
               className="flex-1 px-[14px] py-[10px] border border-[rgba(74,85,104,0.5)] 
               rounded-[8px] text-sm transition-all duration-300 ease-in-out 
@@ -43,7 +43,7 @@ const Header = ({ channelInput, setChannelInput, loading }) => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default HeaderTwo
